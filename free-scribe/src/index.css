@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, .bold {
+  font-family: 'Poppins', sans-serif;
+}
+
+@keyframes wave {
+  0% { width: 20%; }
+  20% { width: 50%; }
+  20% { width: 90%; }
+  40% { width: 36%; }
+  50% { width: 70%; }
+  65% { width: 40%; }
+  75% { width: 75%; }
+  85% { width: 25%; }
+  100% { width: 20%; }
+}
+
+.loading {
+  animation: wave 4s infinite ease-in-out;
+  transform-origin: left;
+}
+
+.loading0 { animation-delay: 0.5s; }
+.loading1 { animation-delay: -4s; }
+.loading2 { animation-delay: 0.2s; }
